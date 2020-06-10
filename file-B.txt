@@ -1,1 +1,0 @@
-Some large amount of text that has a compression ratio that is greater than 100%. If greater than 100%, gzip is used to upload the file
