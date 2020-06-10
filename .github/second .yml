@@ -1,0 +1,19 @@
+name: github action
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  my-job:
+    name: My Job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print a greeting
+      env:
+        MY_VAR: BIO-DATA
+        FIRST_NAME: Maya
+        LAST_NAME: thankappan
+        PLACE_NAME: kothamangalam
+      run: |
+        echo $MY_VAR $FIRST_NAME $LAST_NAME $PLACE_NAME.
