@@ -17,6 +17,11 @@ jobs:
         with:
           name: homework
           path: math-homework.txt
+      - name: Upload new artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: homework2
+          path: math-homework2.txt  
 
   job_2:
     name: Multiply by 9
